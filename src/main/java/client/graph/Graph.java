@@ -14,9 +14,7 @@ public class Graph {
 
     private Exportador exportador;
 
-    private List<Node> nodes = new ArrayList<>(Arrays.asList(new Ciudad(1L, "Ciudad"),
-            new Industria(2L, "Industria"),
-            new LugarTurismo(3L, "Lugar turismo", 5)));
+    private List<Node> nodes = new ArrayList<>();
 
     public String exportar() {
         StringBuilder xml = new StringBuilder();
@@ -38,7 +36,7 @@ public class Graph {
         return nodes;
     }
 
-        public void setNodes(List<Node> nodes) {
+    public void setNodes(List<Node> nodes) {
         this.nodes = nodes;
     }
 
